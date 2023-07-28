@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wobbly Lines - András Dénes</title>
+    <link rel="icon" type="image/ico" href="music.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px; /* Adjust the height as needed */
+            background-color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        /* Add some spacing between sections */
+        section + section {
+            margin-top: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: black; /* Set default text color to black */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white; /* Header text color set to white */
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        a.home-button {
+            color: white;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-decoration: none;
+        }
+
+        a.home-button:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: center;
+            border-top: 2px solid #03223E;
+            text-align: center;
+        }
+
+        button {
+            background-color: white;
+            border: none;
+            color: #03223E;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 100%;
+            max-width: 200px;
+        }
+
+        button:hover {
+            background-color: #03223E;
+            color: white;
+        }
+
+        .blue-bracket {
+            color: blue;
+        }
+
+        .audio-player {
+            display: flex;
+            align-items: center;
+            width: flex;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .audio-player audio {
+            width: 100%;
+            outline: none;
+        }
+
+        .audio-player button {
+            background-color: #03223E;
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        td, th {
+            border: 2px solid #03223E;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #03223E;
+            color: white;
+        }
+
+        .all-rights-reserved {
+            text-align: center;
+            background-color: white;
+            color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wobbly Lines</h1>
+        <a class="home-button" href="https://denandras.github.io/home/"><img src="home-icon-white.png" alt="Home"></a>
+        <h2>András Dénes</h2>
+        <h3>01. August 2023.</h3>
+    </header>
+
+    <p style="height: 1px;"></p> <!-- Adds 20 pixels of height with no content -->
+
+    <section>
+        <div class="audio-player">
+            <h4>Preview</h4>
+            <audio controls>
+                <source src="demo.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <section>
+        <h2>Get a link when released!</h2>
+        <form target="_blank" action="https://formsubmit.co/denandras+13hirlevel@gmail.com" method="POST">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Email" required="">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Go!</button>
+        </form>
+    </section>
+
+    <p style="height: 50px;"></p> <!-- Adds 20 pixels of height with no content -->
+
+    <div class="footer-container">
+        <div class="all-rights-reserved">
+            All rights reserved &copy; [2023] [András Dénes]
+        </div>
+    </div>
+
+</body>
+</html>
